@@ -31,7 +31,7 @@ type FormErrors = {
   [K in keyof FormData]?: string;
 };
 
-export default function ContactPage() {
+function ContactPage() {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -280,3 +280,5 @@ export default function ContactPage() {
     </div>
   );
 }
+
+export default ContactPage;

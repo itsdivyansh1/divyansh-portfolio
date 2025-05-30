@@ -1,33 +1,38 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import HomePage from "./pages/Home";
 import AboutPage from "./pages/About";
-import Layout from "./components/layout";
 import ContactPage from "./pages/Contact";
-
-const router = createBrowserRouter([
-  {
-    element: <Layout />,
-    children: [
-      {
-        path: "/",
-        element: <HomePage />,
-      },
-      {
-        path: "/about",
-        element: <AboutPage />,
-      },
-      {
-        path: "/contact",
-        element: <ContactPage />,
-      },
-    ],
-  },
-]);
+import Navbar from "./components/navbar";
+import { AnimatePresence } from "motion/react";
+import Transition from "./components/transition";
 
 const App = () => {
+  const location = useLocation();
+
   return (
     <>
-      <RouterProvider router={router} />
+      <Navbar />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route
+            index
+            element={
+              <Transition>
+                <HomePage />
+              </Transition>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <Transition>
+                <ContactPage />
+              </Transition>
+            }
+          />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+      </AnimatePresence>
     </>
   );
 };
