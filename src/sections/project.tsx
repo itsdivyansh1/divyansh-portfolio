@@ -27,7 +27,7 @@ const ProjectsSection = () => {
           backgroundImage="/images/projects/expensetracker.jpg"
           url="https://github.com/itsdivyansh1/Expense-Tracker"
           technologies={["python", "sql", "tkinter", "customtkinter", "xampp"]}
-          color="bg-amber-800"
+          color="bg-blue-800"
           className="sm:col-span-1 sm:row-span-1 lg:col-span-1 lg:row-span-1 h-70"
         />
 
