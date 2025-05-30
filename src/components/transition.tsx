@@ -11,7 +11,7 @@ const Transtion = ({ children }: any) => {
     <>
       {children}
 
-      <div className="fixed top-0 left-0 w-screen h-screen flex flex-col pointer-events-none">
+      <div className="fixed top-0 left-0 w-screen h-screen flex flex-col pointer-events-none z-[99]">
         {Array.from({ length: 10 }).map((_, rowIndex) => (
           <div className="flex flex-1 w-full" key={rowIndex}>
             {Array.from({ length: 11 }).map((_, blockIndex) => (
@@ -32,7 +32,7 @@ const Transtion = ({ children }: any) => {
         ))}
       </div>
 
-      <div className="fixed top-0 left-0 w-screen h-screen flex flex-col pointer-events-none">
+      <div className="fixed top-0 left-0 w-screen h-screen flex flex-col pointer-events-none z-[99]">
         {Array.from({ length: 10 }).map((_, rowIndex) => (
           <div className="flex flex-1 w-full" key={rowIndex}>
             {Array.from({ length: 11 }).map((_, blockIndex) => (
