@@ -116,9 +116,9 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="max-h-screen p-4 md:p-8">
+    <div className="max-h-screen md:p-8">
       <div className="my-container">
-        <div className="grid place-items-center lg:grid-cols-2 gap-12 lg:gap-24">
+        <div className="grid place-items-baseline sm:place-items-center md:grid-cols-2 gap-12 lg:gap-24">
           {/* Left Side - Contact Form */}
           <div>
             <div className="flex items-baseline  gap-x-2">
@@ -209,7 +209,7 @@ export default function ContactPage() {
           </div>
 
           {/* Right Side - Contact Info */}
-          <div className="space-y-8">
+          <div className="md:space-y-8">
             <div>
               <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight text-muted-foreground">
                 Email
