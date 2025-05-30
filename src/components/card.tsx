@@ -55,7 +55,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <CardDescription>{description}</CardDescription>
         </div>
         <Button asChild variant={"outline"} className="z-9">
-          <a href={url} target="_blank">
+          <a href={url} aria-label={projectName} target="_blank">
             <ArrowUpRight />
           </a>
         </Button>

@@ -18,17 +18,20 @@ const FooterSection = () => {
       </div>
       <div>
         <Button asChild variant={"ghost"} size={"icon"}>
-          <a href="https://www.linkedin.com/in/divyanshmishra57/">
+          <a
+            href="https://www.linkedin.com/in/divyanshmishra57/"
+            aria-label="Linkedin"
+          >
             <LinkedinIcon />
           </a>
         </Button>
         <Button asChild variant={"ghost"} size={"icon"}>
-          <a href="https://github.com/itsdivyansh1">
+          <a href="https://github.com/itsdivyansh1" aria-label="Github">
             <GithubIcon />
           </a>
         </Button>
         <Button asChild variant={"ghost"} size={"icon"}>
-          <a href="https://x.com/divyansh400">
+          <a href="https://x.com/divyansh400" aria-label="x.com">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -42,7 +45,10 @@ const FooterSection = () => {
           </a>
         </Button>
         <Button asChild variant={"ghost"} size={"icon"}>
-          <a href="https://www.instagram.com/_divyansh_57/">
+          <a
+            href="https://www.instagram.com/_divyansh_57/"
+            aria-label="Instagram"
+          >
             <InstagramIcon />
           </a>
         </Button>

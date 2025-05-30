@@ -19,7 +19,11 @@ const HeroSection = () => {
     <section className="w-full h-auto lg:h-[600px] bg-noise bg-slate-600 text-white flex justify-between md:flex-row flex-col">
       <div className="w-full p-6 md:w-[50%] md:p-12 ">
         <div className="flex items-baseline gap-x-2 font-retro flex-wrap">
-          <img src="/images/typingcat.gif" className="saturate-0 inline" />
+          <img
+            src="/images/typingcat.gif"
+            alt="Random image of a cat"
+            className="saturate-0 inline"
+          />
           <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight uppercase lg:text-5xl">
             Divyansh Mishra
           </h1>
