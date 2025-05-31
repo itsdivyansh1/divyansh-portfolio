@@ -1,3 +1,4 @@
+import GithubCalendarComponent from "@/components/githubcalendar";
 import FooterSection from "@/sections/footer";
 import HeroSection from "@/sections/hero";
 import ProjectsSection from "@/sections/project";
@@ -10,6 +11,9 @@ const HomePage = () => {
 
       {/* Projects Section */}
       <ProjectsSection />
+
+      {/* Github Calendar */}
+      <GithubCalendarComponent />
 
       {/* Footer Section */}
       <FooterSection />
