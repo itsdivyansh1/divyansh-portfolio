@@ -1,6 +1,9 @@
-import GithubCalendarComponent from "@/components/githubcalendar";
 import HeroSection from "@/sections/hero";
 import ProjectsSection from "@/sections/project";
+import { lazy, Suspense } from "react";
+const GithubCalendarComponent = lazy(
+  () => import("@/components/githubcalendar")
+);
 
 const HomePage = () => {
   return (
@@ -12,7 +15,9 @@ const HomePage = () => {
       <ProjectsSection />
 
       {/* Github Calendar */}
-      <GithubCalendarComponent />
+      <Suspense fallback={<div>Loading github stats...</div>}>
+        <GithubCalendarComponent />
+      </Suspense>
     </main>
   );
 };
