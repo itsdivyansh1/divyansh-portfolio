@@ -3,8 +3,8 @@
 
 @font-face {
   font-family: medodica;
-  display: swap;
   src: url("/font/medodica.regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 @custom-variant dark (&:is(.dark *));

@@ -23,6 +23,8 @@ const HeroSection = () => {
             src="/images/typingcat.gif"
             alt="Random image of a cat"
             className="saturate-0 inline"
+            width={64}
+            height={64}
           />
           <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight uppercase lg:text-5xl">
             Divyansh Mishra

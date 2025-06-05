@@ -1,5 +1,8 @@
 import { DynamicSquigglyHeading } from "@/utils/squiggly_heading";
+import { memo } from "react";
 import GitHubCalendar from "react-github-calendar";
+
+const MemoizedCalendar = memo(GitHubCalendar);
 
 const GithubCalendarComponent = () => {
   const minimalTheme = {
@@ -13,7 +16,7 @@ const GithubCalendarComponent = () => {
         <div className="flex flex-col sm:flex-row gap-x-2 ">
           <img
             src="/images/nerdcheckq.gif"
-            alt="cool projects section"
+            alt="my github stats"
             className="w-[40px] h-[40px] saturate-0"
           />
           <h2 className="mb-8 scroll-m-20  text-3xl font-semibold tracking-tight transition-colors">
@@ -22,7 +25,7 @@ const GithubCalendarComponent = () => {
         </div>
       </div>
       <div className="flex items-center justify-center border p-4">
-        <GitHubCalendar
+        <MemoizedCalendar
           username="itsdivyansh1"
           theme={minimalTheme}
           blockRadius={0}

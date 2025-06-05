@@ -24,7 +24,7 @@ const ProjectsSection = () => {
         <ProjectCard
           projectName="Expense Tracker"
           description="A smart expense tracker app to manage your income, track spending, and stay on budget."
-          backgroundImage="/images/projects/expensetracker.jpg"
+          backgroundImage="/images/projects/expensetracker.webp"
           url="https://github.com/itsdivyansh1/Expense-Tracker"
           technologies={["python", "sql", "tkinter", "customtkinter", "xampp"]}
           color="bg-blue-800"

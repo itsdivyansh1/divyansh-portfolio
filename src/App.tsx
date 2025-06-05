@@ -5,6 +5,7 @@ import ContactPage from "./pages/Contact";
 import Navbar from "./components/navbar";
 import { AnimatePresence } from "motion/react";
 import Transition from "./components/transition";
+import FooterSection from "./sections/footer";
 
 const App = () => {
   const location = useLocation();
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="/about" element={<AboutPage />} />
         </Routes>
       </AnimatePresence>
+      <FooterSection />
     </>
   );
 };
